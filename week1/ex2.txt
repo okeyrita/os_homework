@@ -1,0 +1,18 @@
+    1  history
+    2  nano ./ex3.sh
+    3  ls
+    4  ./ex3.sh
+    5  ls -l
+    6  cmhod 755 ./ex3.sh 
+    7  chmod 755 ./ex3.sh 
+    8  ls -l
+    9  ./ex3.sh 
+   10  date --help
+   11  date +%T
+   12  nano ./ex3.sh
+   13  ./ex3.sh 
+   14  nano ./main.c
+   15  ls
+   16  gcc main.c -o ex4
+   17  ./ex4
+   18  history > ex2.txt
