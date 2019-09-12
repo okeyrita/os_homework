@@ -1,0 +1,2 @@
+There will be 1 child process created by the 1st fork().
+Each next run of program make  result which equal previous + 1, because these processes run in the system consistently.

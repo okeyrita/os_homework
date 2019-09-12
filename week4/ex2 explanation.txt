@@ -1,0 +1,1 @@
+This tree has 32 processes because we have loop for 5 . And get 2^5 = 32 processes.
