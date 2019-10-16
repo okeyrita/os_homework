@@ -1,0 +1,2 @@
+The possible sequence of references that will result in increased hit ratio (and decreased miss ratio) is given input in increaced order. In this case every repetition calls increasing of hit numer by 1. So hit number becames input size minus number of distinct values.
+To increase it ration we should make distances between two same references more than number of page frames. In this case old value from this pair will be removed from buffer when the new appears.
