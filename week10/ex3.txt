@@ -1,0 +1,19 @@
+>Remove execute permission for everybody 
+command "chmod 666 _ex3.txt"
+It will be permissions 666, because 6 corresponds to Permission Type Read +Write.
+
+>Grant all permissions to owner and others (not group) 
+command "chmod 707 _ex3.txt"
+It will be permissions 707, because 7 corresponds to Permission Type Read+Write+Execute. And 0 corresponds to Permission Type  No Permission.
+
+>Make group permissions equal to user permissions 
+command "chmod g=u _ex3.txt"
+
+– What does 660 mean for ex3.txt? 
+it mean that Owner and usergroup can Read and Write. And others have no Permissions.
+
+– What does 775 mean for ex3.txt?
+it mean that Owner and usergroup can Read , Write and Execute . And others can Read and Execute
+
+– What does 777 mean for ex3.txt? 
+it mean that Owner, usergroup and others can Read , Write and Execute .
