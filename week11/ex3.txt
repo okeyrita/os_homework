@@ -1,0 +1,4 @@
+When fork () is called, two completely identical processes occur. All code after fork () is executed twice.
+But the process-child inherits the position of the instruction pointer.
+Then in the file with lines "printf("Hello"); fork();" we get output with double printing "Hello".
+And in the file with lines "printf("Hello\n"); fork();" we get ouput with one "Hello".
