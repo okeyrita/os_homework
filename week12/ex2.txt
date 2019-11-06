@@ -1,0 +1,6 @@
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+st���
