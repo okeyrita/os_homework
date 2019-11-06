@@ -1,0 +1,60 @@
+Copying time increases with decreasing of the buffer size 
+
+gcc copy.c -o copy -DBUF_SIZE=1024
+time ./copy Template.pptx fileB
+
+real    0m0.069s
+user    0m0.016s
+sys     0m0.063s
+
+
+gcc copy.c -o copy -DBUF_SIZE=512
+time ./copy Template.pptx fileB
+
+real    0m0.118s
+user    0m0.000s
+sys     0m0.109s
+
+gcc copy.c -o copy -DBUF_SIZE=256
+time ./copy Template.pptx fileB
+
+real    0m0.243s
+user    0m0.016s
+sys     0m0.172s
+
+gcc copy.c -o copy -DBUF_SIZE=128
+time ./copy Template.pptx fileB
+
+real    0m0.357s
+user    0m0.016s
+sys     0m0.313s
+
+For the big buffer adding Y_SYNC flag make copying time smaller.   
+
+gcc copy.c -o copy -DBUF_SIZE=1024
+time ./copy Template.pptx fileB
+
+real    0m0.067s
+user    0m0.000s
+sys     0m0.047s
+
+gcc copy.c -o copy -DBUF_SIZE=512
+time ./copy Template.pptx fileB
+
+real    0m0.106s
+user    0m0.031s
+sys     0m0.047s
+
+gcc copy.c -o copy -DBUF_SIZE=256
+time ./copy Template.pptx fileB
+
+real    0m0.199s
+user    0m0.000s
+sys     0m0.172s
+
+gcc copy.c -o copy -DBUF_SIZE=128
+time ./copy Template.pptx fileB
+
+real    0m0.421s
+user    0m0.016s
+sys     0m0.391s
